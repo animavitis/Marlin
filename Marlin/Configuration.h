@@ -536,12 +536,17 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  //Ortur 4 V1 90
-  #define DEFAULT_bedKp 190.43
-  #define DEFAULT_bedKi 30.19
-  #define DEFAULT_bedKd 800.81
+  // //Ortur 4 V1 90
+  // #define DEFAULT_bedKp 190.43
+  // #define DEFAULT_bedKi 30.19
+  // #define DEFAULT_bedKd 800.81
 
-  // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
+  //Ortur 4 V1 80
+  #define DEFAULT_bedKp 186.74
+  #define DEFAULT_bedKi 36.77
+  #define DEFAULT_bedKd 632.31
+
+  // FIND YOUR OWN: "M303 E-1 C8 S80" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
 
 // @section extruder
@@ -1095,7 +1100,7 @@
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -11
 #define Y_MIN_POS -11
-#define Z_MIN_POS -1
+#define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
 #define Z_MAX_POS 293
